@@ -19,9 +19,11 @@ import img17 from "../../../assets/casestudies/RadMedia/image6 1.png"
 import img18 from "../../../assets/casestudies/RadMedia/image11 (1).jpeg"
 import img19 from "../../../assets/casestudies/RadMedia/Artboard 1@4x-100 (2) 1.png"
 import img20 from "../../../assets/casestudies/RadMedia/jocelyn-morales-qqIj5pV48-s-unsplash (1) 1 (1).png"
+import AnimatedComponent from "../../../components/AnimatedComponent"
 
 function RadMedia() {
   return (
+    <AnimatedComponent>
     <main>
         <div className={styles.mainpart}>
           <div className={styles.headings}>
@@ -47,7 +49,6 @@ function RadMedia() {
               the medium from photography to videography.
             </p>
           </section>
-          <hr />
           <section className={styles.text}>
             <p>Branding</p>
             <p>
@@ -189,6 +190,7 @@ function RadMedia() {
           </div>
         </div>
       </main>
+      </AnimatedComponent>
   )
 }
 

@@ -4,11 +4,11 @@ import RadMedia from "../../../assets/images/radmedia.png";
 import BakerStreet from "../../../assets/images/bakerstreet.png";
 import AthmaBodhana from "../../../assets/images/Atmabodh.png";
 import Culinary from "../../../assets/images/Culinary .jpg";
-import Eunioa from "../../../assets/images/Eunoia.jpg";
 import Stone from "../../../assets/images/stone.png";
 import Toot from "../../../assets/images/TOOT.png";
 import Hathkari from "../../../assets/images/hathkari.png";
 import CreamForest from "../../../assets/images/creameforest.png";
+import PawPet from "../../../assets/casestudies/pawpets/m016t0119_c_branding_mockup_27may22.png";
 
 export default function Card() {
   return (
@@ -36,8 +36,8 @@ export default function Card() {
         </div>
         <div className={styles.case}>
           <div className={styles.text}>
-            <p>RAD Media</p>
-            <p>Branding | Website</p>
+            <p style={{"color": "white"}}>RAD Media</p>
+            <p style={{"color": "white"}}>Branding | Website</p>
           </div>
           <img src={RadMedia} alt="SereneSkin" />
           <a href="/works/radmedia">
@@ -57,7 +57,7 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={AthmaBodhana} alt="SereneSkin" />
-          <a href="/">
+          <a href="/works/atmabodh">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
@@ -67,7 +67,7 @@ export default function Card() {
             <p>Branding</p>
           </div>
           <img src={Culinary} alt="SereneSkin" />
-          <a href="/">
+          <a href="/works/culinary">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
@@ -75,11 +75,11 @@ export default function Card() {
       <div className={styles.thirdcard}>
         <div className={styles.casestudy}>
           <div className={styles.text}>
-            <p>Eunoia</p>
+            <p>PawPet</p>
             <p>Branding</p>
           </div>
-          <img src={Eunioa} alt="SereneSkin" />
-          <a href="/">
+          <img src={PawPet} alt="SereneSkin" />
+          <a href="/works/pawpet">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
@@ -89,7 +89,7 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={Stone} alt="SereneSkin" />
-          <a href="/">
+          <a href="/works/thestone">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
@@ -98,8 +98,8 @@ export default function Card() {
             <p>Toot</p>
             <p>Branding | Website</p>
           </div>
-          <img src={Toot} alt="SereneSkin" />
-          <a href="/">
+          <img src={Toot} alt="toot" />
+          <a href="/works/toot">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
@@ -110,8 +110,8 @@ export default function Card() {
             <p>Hathkari & Co</p>
             <p>Branding | Website</p>
           </div>
-          <img src={Hathkari} alt="SereneSkin" />
-          <a href="/">
+          <img src={Hathkari} alt="hathkari" />
+          <a href="/works/hathkari">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
@@ -120,8 +120,8 @@ export default function Card() {
             <p>Creamforest</p>
             <p>Branding | Website</p>
           </div>
-          <img src={CreamForest} alt="SereneSkin" />
-          <a href="/">
+          <img src={CreamForest} alt="creamforest" />
+          <a href="/works/creamforest">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
