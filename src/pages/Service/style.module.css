@@ -70,7 +70,7 @@
     background-color: white;
   }
   to {
-    background-color: rgb(232, 23, 103);
+    background-color: #e5348c;
   }
 }
 .changeColorfour {
@@ -82,7 +82,7 @@
     background-color: #fff;
   }
   to {
-    background-color: #fffff4;
+    background-color: #fffaf0;
   }
 }
 .stickyColor {
@@ -182,7 +182,7 @@
   padding: 0 5vw;
 }
 .dynamicP {
-  color: black;
+  color: #e5348c;
   font-family: Poppins;
   font-size: 500px;
   font-style: normal;
@@ -200,10 +200,14 @@
 .lastpart p {
   color: #000;
   text-align: center;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 80px;
-  font-weight: 900;
+  font-weight: bold;
   line-height: normal;
+}
+
+.lastpart p span {
+  text-decoration: underline;
 }
 
 @media (max-width: 1000px){
