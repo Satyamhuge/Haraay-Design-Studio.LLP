@@ -70,7 +70,7 @@
     background-color: white;
   }
   to {
-    background-color: rgb(232, 23, 103);
+    background-color: #e5348c;
   }
 }
 .changeColorfour {
@@ -82,7 +82,7 @@
     background-color: #fff;
   }
   to {
-    background-color: #fffff4;
+    background-color: #fffaf0;
   }
 }
 .stickyColor {
@@ -153,6 +153,10 @@
   font-size: 20px;
   font-weight: 400;
 }
+.button:hover {
+  scale: 1.3;
+  transition: 0.5s;
+}
 .thirdpart {
   background-color: white;
 }
@@ -182,7 +186,7 @@
   padding: 0 5vw;
 }
 .dynamicP {
-  color: black;
+  color: #e5348c;
   font-family: Poppins;
   font-size: 500px;
   font-style: normal;
@@ -191,6 +195,7 @@
   padding-left: 12%;
 }
 .lastpart {
+  background-color: #2b2322;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -199,10 +204,16 @@
 .lastpart p {
   color: #000;
   text-align: center;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 80px;
-  font-weight: 900;
+  font-weight: bold;
   line-height: normal;
+}
+
+.lastpart p span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
 }
 
 @media (max-width: 1000px){
@@ -304,6 +315,9 @@
   .changeColor {
     animation: fadeInBackground 1s ease forwards;
   }
+  .lastpart{
+    background-color: white;
+  }
   
   @keyframes fadeInBackground {
     from {
@@ -311,6 +325,18 @@
     }
     to {
       background-color: white;
+    }
+  }
+  .lastPartColor {
+    animation: lastpartchangeColor 1s ease forwards;
+  }
+  
+  @keyframes lastpartchangeColor {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: #fff;
     }
   }
 }

@@ -24,10 +24,10 @@ function Navbar() {
           style={{ display: display ? "flex" : "none" }}
         >
           <div className={styles.navigation}>
-            <a href="/">Work</a>
-            <a href="/services">Service</a>
-            <a href="/about">About</a>
-            <a href="/">Careers</a>
+            <a href="/works">Work</a>
+            <a href="/expertise">Expertise</a>
+            <a href="/about">About Haraay</a>
+            <a href="/careerdashboard">Careers</a>
           </div>
           <div>
             <a href="/contactus">

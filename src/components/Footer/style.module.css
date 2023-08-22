@@ -4,6 +4,7 @@
     height: auto;
     background-color: #2b2322;
     padding: 0 40px;
+    padding-bottom: 7px;
 }
 .container {
     display: flex;
@@ -33,8 +34,8 @@
     transform: scale(1.1);
 }
 .button{
-    background-color: rgb(232, 23, 103);
-    border: 2px solid rgb(232, 23, 103);
+    background-color: #e5348c;
+    border: 2px solid #e5348c;
     padding: 10px 25px;
     border-radius: 30px;
     color: white;

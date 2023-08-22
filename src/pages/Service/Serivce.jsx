@@ -3,6 +3,8 @@ import styles from "./style.module.css";
 import AnimatedComponent from "../../components/AnimatedComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 import React from "react";
 
@@ -59,6 +61,10 @@ function Serivce() {
   }, []);
 
   useEffect(() => {
+        Aos.init({duration: 1500});
+    }, []);
+
+  useEffect(() => {
     const texts = ["HAR", "AAY"];
     const stickySection = document.querySelector(`.${styles.sticky}`);
     const scrollSection = stickySection.querySelector(
@@ -108,7 +114,7 @@ function Serivce() {
             <FontAwesomeIcon icon={faArrowDown} className={styles.arrowdown} />
           </div>
         </div>
-        <div className={styles.secpart}>
+        <div data-aos="fade-up" className={styles.secpart}>
           <div className={styles.secfirst}>
             <div className={styles.head}>BRAND IDENTITY</div>
             <div className={styles.text}>
@@ -118,37 +124,37 @@ function Serivce() {
           </div>
           <div className={styles.buttonspart}>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Visual identity</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Brand strategy</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Packaging Design</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Print visuals</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Brand audit</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>
                   Messaging & tone of voice
                 </button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Brand launch</button>
-              </a>
+              
             </div>
           </div>
         </div>
-        <div className={`${styles.secpart} ${styles.thirdpart}`}>
+        <div data-aos="fade-up" className={`${styles.secpart} ${styles.thirdpart}`}>
           <div className={styles.secfirst}>
             <div className={styles.head}>DIGITAL EXPERIENCE </div>
             <div className={styles.text}>
@@ -160,32 +166,32 @@ function Serivce() {
           </div>
           <div className={styles.buttonspart}>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>UI / UX Design</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Audit & UX Design</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Design System</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Showcase Site</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>E-Commerce site</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Web Development</button>
-              </a>
+              
             </div>
           </div>
         </div>
-        <div className={`${styles.secpart} ${styles.forthpart}`}>
+        <div data-aos="fade-up" className={`${styles.secpart} ${styles.forthpart}`}>
           <div className={styles.secfirst}>
             <div className={styles.head}>STRATEGY & IDEAS</div>
             <div className={styles.text}>
@@ -198,40 +204,40 @@ function Serivce() {
           </div>
           <div className={styles.buttonspart}>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Target Scan</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Positioning</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Brand Platform</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Social Strategy</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Content Strategy</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Digital Strategy</button>
-              </a>
+              
             </div>
           </div>
         </div>
-        <div className={styles.stickyparent}>
+        <div data-aos="fade-up" className={styles.stickyparent}>
           <div className={styles.sticky}>
             <div className={styles.scrollsection}></div>
           </div>
         </div>
-        <div className={styles.lastpart}>
+        <div data-aos="fade-up" className={styles.lastpart}>
           <p>
             YOU HAVE A BEAUTIFUL
-            <br /> PROJECT ? LET'S TALK ABOUT IT
+            <br /> PROJECT ? <a href="/contactus"><span>LET'S TALK ABOUT IT</span></a>
             <br />*
           </p>
         </div>

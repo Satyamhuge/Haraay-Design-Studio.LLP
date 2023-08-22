@@ -18,6 +18,10 @@ import PawPet from "./pages/CaseStudies/PawPet/PawPet";
 import Culinary from "./pages/CaseStudies/Culinary/Culinary";
 import Atmabodh from "./pages/CaseStudies/Atmabodh/Atmabodh";
 import Serivce from "./pages/Service/Serivce";
+import CareerDashboard from "./pages/Career/Pages/Dashboard";
+import Alljobs from "./pages/Career/Pages/AllJobs/Alljobs";
+import ApplyNow from "./pages/Career/Pages/ApplyNow/ApplyNow";
+import Home from "./pages/LandingScreen/Home";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -67,10 +71,14 @@ function App() {
         <Navbar />
         <AnimatePresence>
           <Routes>
-            <Route path="/" element={<Works />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/works" element={<Works />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Serivce />} />
+            <Route path="/expertise" element={<Serivce />} />
             <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/careerdashboard" element={<CareerDashboard />} />
+            <Route path="/alljobs" element={<Alljobs />} />
+            <Route path="/applynow" element={<ApplyNow />} />
             <Route path="/works/sereneskin" element={<SereneSkin />} />
             <Route path="/works/radmedia" element={<RadMedia />} />
             <Route path="/works/bakerstreet" element={<BakersStreet />} />

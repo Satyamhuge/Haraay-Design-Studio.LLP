@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,900&display=swap');
 
 * {
   margin: 0;
@@ -10,9 +10,11 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .cursor {
-  background-color: rgb(232, 23, 103);
+  background-color: #e5348c;
   height: 64px;
   width: 64px;
   border-radius: 50%;
@@ -26,12 +28,21 @@ body {
 .cursor.text-mode {
   height: 120px;
   width: 120px;
-  border: 5px solid rgb(232, 23, 103);
-  background-color: transparent; /* Adjust the alpha value for transparency */
+  border: 5px solid #e5348c;
+  background-color: transparent;
   mix-blend-mode: difference;
-  backdrop-filter: blur(1px); /* Adjust the blur radius as needed */
+  backdrop-filter: blur(1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #e2f5ff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b9ccd6;
+  border-radius: 5px;
+}
 @media (max-width: 500px){
   .cursor, .cursor.text-mode {
     display: none;
